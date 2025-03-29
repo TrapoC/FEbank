@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FE Bank - Community Focused Banking</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- SwiperJS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+  </head>
+  <body class="bg-white text-gray-900">
+    <!-- Top Info Bar -->
+    <div
+      class="bg-white text-sm text-gray-700 p-2 flex justify-center text-center sm:text-left"
+    >
+      <p>
+        <strong>FDIC-Insured</strong> - Backed by the full faith and credit of
+        the U.S. Government
+      </p>
+    </div>
+
+    <!-- Navbar -->
+    <nav
+      id="navbar"
+      class="bg-black bg-opacity-80 backdrop-blur-lg text-white p-3 sm:p-4 flex flex-wrap justify-between items-center fixed top-0 w-full z-50 transition-all duration-300 ease-in-out"
+    >
+      <a href="#" class="flex items-center">
+        <img
+          src="./first-eagle-bank-logo (2).svg"
+          alt="Bank Logo"
+          class="w-12 h-12 sm:w-16 sm:h-16"
+        />
+      </a>
+      <button
+        id="menu-toggle"
+        class="sm:hidden text-white focus:outline-none"
+        aria-label="Toggle menu"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-5 w-5"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16m-7 6h7"
+          />
+        </svg>
+      </button>
+      <div
+        id="menu"
+        class="hidden sm:flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-6 text-sm font-medium w-full sm:w-auto mt-3 sm:mt-0"
+      >
+        <a href="#" class="hover:underline">Business</a>
+        <a href="#" class="hover:underline">Personal</a>
+        <a href="#" class="hover:underline">Resources</a>
+        <a href="#" class="hover:underline">Why First Eagle?</a>
+        <a href="#" class="hover:underline">Search</a>
+        <div class="flex flex-col sm:hidden space-y-3 mt-3">
+          <a
+            href="#"
+            class="bg-green-700 text-white px-3 py-2 rounded-lg hover:bg-green-800 text-center"
+            >Login</a
+          >
+          <a
+            href="#"
+            class="bg-blue-700 text-white px-3 py-2 rounded-lg hover:bg-blue-800 text-center"
+            >Sign Up</a
+          >
+        </div>
+      </div>
+      <div class="hidden sm:flex space-x-3">
+        <a
+          href="#"
+          class="bg-green-700 text-white px-3 py-2 rounded-lg hover:bg-green-800"
+          >Login</a
+        >
+        <a
+          href="#"
+          class="bg-blue-700 text-white px-3 py-2 rounded-lg hover:bg-blue-800"
+          >Sign Up</a
+        >
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      class="text-center py-16 sm:py-20 md:py-24 lg:py-32 bg-cover bg-center"
+      style="
+        background-image: url('https://images.unsplash.com/photo-1616803140344-6682afb13cda?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+        margin-top: 6px;
+      "
+    >
+      <div
+        class="bg-white bg-opacity-90 p-8 sm:p-16 md:p-20 lg:p-24 rounded-3xl max-w-4xl mx-auto"
+      >
+        <h1 class="text-4xl sm:text-6xl md:text-7xl font-extrabold">
+          Banking with Purpose
+        </h1>
+        <p class="mt-4 sm:mt-6 md:mt-8 text-lg sm:text-xl md:text-2xl">
+          Empowering communities through accessible and secure financial
+          services.
+        </p>
+        <a
+          href="#"
+          class="mt-6 sm:mt-10 md:mt-12 inline-block bg-yellow-500 text-white px-6 sm:px-8 md:px-10 py-3 sm:py-4 md:py-5 rounded-full hover:bg-yellow-600 transition"
+          >Join Us Today</a
+        >
+      </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section class="bg-black text-white py-16 sm:py-20 md:py-24 lg:py-32">
+      <div
+        class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-16 lg:gap-20"
+      >
+        <div>
+          <h2 class="text-2xl sm:text-3xl md:text-4xl font-semibold">
+            By your side every step of the way
+          </h2>
+          <p class="mt-4 text-sm sm:text-base md:text-lg">
+            What makes First Eagle Bank different? Our people focus on lasting
+            and personal relationships, making your goals our priority, every
+            single day.
+          </p>
+          <a
+            href="#"
+            class="mt-4 sm:mt-6 md:mt-8 inline-block bg-green-700 text-white px-4 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4 rounded-lg hover:bg-green-800"
+            >Meet Our People</a
+          >
+        </div>
+        <div class="grid grid-cols-2 gap-2 sm:gap-4 md:gap-6">
+          <img
+            src="https://source.unsplash.com/200x200/?person1"
+            class="rounded-lg"
+            alt="Person 1"
+          />
+          <img
+            src="https://source.unsplash.com/200x200/?person2"
+            class="rounded-lg"
+            alt="Person 2"
+          />
+          <img
+            src="https://source.unsplash.com/200x200/?person3"
+            class="rounded-lg"
+            alt="Person 3"
+          />
+          <img
+            src="https://source.unsplash.com/200x200/?person4"
+            class="rounded-lg"
+            alt="Person 4"
+          />
+        </div>
+      </div>
+
+      <div
+        class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-16 lg:gap-20 mt-8 sm:mt-16 lg:mt-20"
+      >
+        <div>
+          <h2 class="text-2xl sm:text-3xl md:text-4xl font-semibold">
+            Community at the heart of each and every decision
+          </h2>
+          <p class="mt-4 text-sm sm:text-base md:text-lg">
+            As a Community Development Financial Institution, we are committed
+            to promoting racial equity with an inclusive and just economic
+            environment.
+          </p>
+          <a
+            href="#"
+            class="mt-4 sm:mt-6 md:mt-8 inline-block bg-green-700 text-white px-4 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4 rounded-lg hover:bg-green-800"
+            >Our Community Involvement</a
+          >
+        </div>
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 md:gap-6 text-center">
+          <div>
+            <h3 class="text-4xl font-extrabold">$8.2 million</h3>
+            <p>Community Investments</p>
+          </div>
+          <div>
+            <h3 class="text-4xl font-extrabold">2,464</h3>
+            <p>Volunteer hours past 5 years</p>
+          </div>
+          <div>
+            <h3 class="text-4xl font-extrabold">$106.8 million</h3>
+            <p>Community Development Loans</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="bg-black py-16 sm:py-20 md:py-24 lg:py-32">
+      <div class="max-w-6xl mx-auto text-center">
+        <h2
+          class="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-6 sm:mb-8 md:mb-10 text-white"
+        >
+          What Our Customers Say
+        </h2>
+        <div class="relative">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <!-- Testimony 1 -->
+              <div class="swiper-slide">
+                <div
+                  class="p-1 bg-white rounded-full shadow-lg flex flex-col items-center"
+                >
+                  <img
+                    src="https://source.unsplash.com/100x100/?person1"
+                    alt="Customer 1"
+                    class="w-24 h-23 rounded-full mb-4 border-4 border-gray-200"
+                  />
+                  <p class="text-lg italic text-gray-600">
+                    "First Eagle Bank has been a game-changer for my business.
+                    Their support and services are unmatched!"
+                  </p>
+                  <p class="mt-4 font-semibold text-gray-800">- John Doe</p>
+                </div>
+              </div>
+              <!-- Testimony 2 -->
+              <div class="swiper-slide">
+                <div
+                  class="p-1 bg-white rounded-full shadow-lg flex flex-col items-center"
+                >
+                  <img
+                    src="https://source.unsplash.com/100x100/?person2"
+                    alt="Customer 2"
+                    class="w-24 h-23 rounded-full mb-4 border-4 border-gray-200"
+                  />
+                  <p class="text-lg italic text-gray-600">
+                    "I love how easy it is to manage my finances with First
+                    Eagle Bank. Highly recommend!"
+                  </p>
+                  <p class="mt-4 font-semibold text-gray-800">- Jane Smith</p>
+                </div>
+              </div>
+              <!-- Testimony 3 -->
+              <div class="swiper-slide">
+                <div
+                  class="p-1 bg-white rounded-full shadow-lg flex flex-col items-center"
+                >
+                  <img
+                    src="https://source.unsplash.com/100x100/?person3"
+                    alt="Customer 3"
+                    class="w-24 h-23 rounded-full mb-4 border-4 border-gray-200"
+                  />
+                  <p class="text-lg italic text-gray-600">
+                    "Their customer service is top-notch. I always feel valued
+                    and supported."
+                  </p>
+                  <p class="mt-4 font-semibold text-gray-800">
+                    - Emily Johnson
+                  </p>
+                </div>
+              </div>
+              <!-- Testimony 4 -->
+              <div class="swiper-slide">
+                <div
+                  class="p-1 bg-white rounded-full shadow-lg flex flex-col items-center"
+                >
+                  <img
+                    src="https://source.unsplash.com/100x100/?person4"
+                    alt="Customer 4"
+                    class="w-24 h-23 rounded-full mb-4 border-4 border-gray-200"
+                  />
+                  <p class="text-lg italic text-gray-600">
+                    "First Eagle Bank has helped me achieve my financial goals
+                    with ease."
+                  </p>
+                  <p class="mt-4 font-semibold text-gray-800">
+                    - Michael Brown
+                  </p>
+                </div>
+              </div>
+              <!-- Testimony 5 -->
+              <div class="swiper-slide">
+                <div
+                  class="p-1 bg-white rounded-full shadow-lg flex flex-col items-center"
+                >
+                  <img
+                    src="https://source.unsplash.com/100x100/?person5"
+                    alt="Customer 5"
+                    class="w-24 h-23 rounded-full mb-4 border-4 border-gray-200"
+                  />
+                  <p class="text-lg italic text-gray-600">
+                    "I trust First Eagle Bank for all my banking needs. They
+                    truly care about their customers."
+                  </p>
+                  <p class="mt-4 font-semibold text-gray-800">- Sarah Wilson</p>
+                </div>
+              </div>
+            </div>
+            <!-- Add Navigation Buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination mt-4"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-8 sm:py-12 md:py-16 lg:py-20">
+      <div
+        class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-8 md:gap-12"
+      >
+        <div>
+          <a href="#" class="block hover:underline">About Us</a>
+          <a href="#" class="block hover:underline">Locations & Hours</a>
+          <a href="#" class="block hover:underline">Contact Us</a>
+          <a href="#" class="block hover:underline">Stay Informed</a>
+          <a href="#" class="block hover:underline">Career Opportunities</a>
+          <a href="#" class="block hover:underline"
+            >Personal Financial Statement</a
+          >
+          <a href="#" class="block hover:underline">Holiday Schedule</a>
+        </div>
+        <div class="text-center">
+          <img
+            src="./first-eagle-bank-logo (2).svg"
+            alt="Bank Logo"
+            class="mx-auto mb-4 w-20 h-20 sm:w-24 sm:h-24"
+          />
+          <p class="text-sm">© 2025 First Eagle Bank. All rights reserved.</p>
+          <div class="flex justify-center space-x-4 mt-4">
+            <a
+              href="#"
+              aria-label="Facebook"
+              class="text-white hover:text-gray-400"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M22.675 0h-21.35c-.733 0-1.325.592-1.325 1.325v21.351c0 .733.592 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.464.099 2.795.143v3.24h-1.918c-1.504 0-1.796.715-1.796 1.763v2.313h3.591l-.467 3.622h-3.124v9.294h6.116c.733 0 1.325-.591 1.325-1.324v-21.35c0-.733-.592-1.325-1.325-1.325z"
+                />
+              </svg>
+            </a>
+            <a
+              href="#"
+              aria-label="Twitter"
+              class="text-white hover:text-gray-400"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.723-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-2.717 0-4.92 2.203-4.92 4.917 0 .386.044.762.127 1.124-4.087-.205-7.713-2.164-10.141-5.144-.423.725-.666 1.562-.666 2.457 0 1.694.863 3.188 2.175 4.065-.802-.026-1.555-.246-2.213-.616v.062c0 2.364 1.681 4.337 3.911 4.785-.409.111-.84.171-1.285.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.6 3.417-1.68 1.318-3.809 2.104-6.102 2.104-.396 0-.788-.023-1.175-.067 2.179 1.397 4.768 2.212 7.548 2.212 9.054 0 14.001-7.496 14.001-13.986 0-.213-.005-.425-.014-.637.961-.695 1.8-1.562 2.462-2.549z"
+                />
+              </svg>
+            </a>
+            <a
+              href="#"
+              aria-label="LinkedIn"
+              class="text-white hover:text-gray-400"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M19.998 3h-16c-1.104 0-2 .896-2 2v14c0 1.104.896 2 2 2h16c1.104 0 2-.896 2-2v-14c0-1.104-.896-2-2-2zm-11.998 16h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.498 11.268h-3v-5.604c0-1.337-.027-3.061-1.865-3.061-1.865 0-2.151 1.459-2.151 2.967v5.698h-3v-10h2.881v1.367h.041c.401-.759 1.379-1.559 2.841-1.559 3.037 0 3.598 2.001 3.598 4.604v5.588z"
+                />
+              </svg>
+            </a>
+          </div>
+          <img
+            src="./bauer.svg"
+            alt="Footer Logo"
+            class="mx-auto mt-4 w-16 h-16 sm:w-20 sm:h-20"
+          />
+        </div>
+        <div>
+          <a href="#" class="block hover:underline">FDIC Coverage</a>
+          <a href="#" class="block hover:underline">Privacy Policy</a>
+          <a href="#" class="block hover:underline">Illinois CRA Notice</a>
+          <a href="#" class="block hover:underline"
+            >ADA Accessibility Statement</a
+          >
+          <a href="#" class="block hover:underline"
+            >Loan Billing Errors or Inquiries</a
+          >
+          <a href="#" class="block hover:underline"
+            >Title VI and Section 504 Notice</a
+          >
+          <a href="#" class="block hover:underline">Terms of Use</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper-container", {
+        loop: true,
+        autoplay: {
+          delay: 5000,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+
+      const menuToggle = document.getElementById("menu-toggle");
+      const menu = document.getElementById("menu");
+
+      menuToggle.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
